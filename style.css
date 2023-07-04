@@ -1,6 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
-  width: 100vw;
+  width: 100%;
   margin: 0;
 }
 
@@ -178,11 +178,34 @@ body {
   height: 70%;
 }
 
+.footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0 15% 3%;
+}
+
+.footer > img {
+  height: 8vh;
+  width: 20vh;
+  padding-right: 15%;
+}
+
+.footer > p {
+  font-size: 0.5rem;
+  padding-top: 2%;
+  padding-right: 5%;
+}
+
 .desktop-topbar,
 .desktop-menu,
 .desktop-seeall-activities {
   display: none;
 }
+
+/* Desktop Styles */
 
 @media only screen and (min-width: 768px) {
   /* .desktop-menu {
@@ -196,7 +219,8 @@ body {
 
   .desktop-topbar,
   .desktop-menu,
-  .desktop-seeall-activities {
+  .desktop-seeall-activities,
+  .footer-container {
     display: flex;
   }
 
@@ -337,5 +361,19 @@ body {
     margin: 1%;
     padding-bottom: 0;
     margin-bottom: 4.5%;
+  }
+
+  .footer {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1% 10% 3% 10%;
+  }
+
+  .footer > p {
+    font-size: 0.8rem;
+    padding-top: 3%;
   }
 }
