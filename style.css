@@ -111,8 +111,76 @@ body {
   color: #484c52;
 }
 
+.main-activities-section {
+  background-color: #272a31;
+  opacity: 1;
+  background-image: linear-gradient(30deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e), linear-gradient(150deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e), linear-gradient(30deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e), linear-gradient(150deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e), linear-gradient(60deg, #0e0e0e77 25%, transparent 25.5%, transparent 75%, #0e0e0e77 75%, #0e0e0e77), linear-gradient(60deg, #0e0e0e77 25%, transparent 25.5%, transparent 75%, #0e0e0e77 75%, #0e0e0e77);
+  background-size: 14px 25px;
+  background-position: 0 0, 0 0, 7px 12px, 7px 12px, 0 0, 7px 12px;
+  margin-top: -5%;
+  color: #f3f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.activities-header-div {
+  width: 50%;
+}
+
+.activity-header {
+  font-weight: 400;
+  padding: 7%;
+  text-align: center;
+  position: relative;
+  font-size: 1.2rem;
+  margin: 7%;
+  margin-top: 12%;
+}
+
+.jm-activity-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+.jm-activity {
+  width: 90%;
+  background-color: #f3f3f321;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
+.activity-icon {
+  width: 90%;
+}
+
+.activity-name {
+  color: #ec5242;
+  text-shadow: 1px 1px #000;
+  text-align: left;
+  padding-right: 2%;
+}
+
+.activity-description > p {
+  font-size: 0.8rem;
+  text-shadow: 1px 1px #000;
+  color: #fff;
+}
+
+.activity-icon > img {
+  background-color: #ffffff8a;
+  width: 70%;
+  height: 70%;
+}
+
 .desktop-topbar,
-.desktop-menu {
+.desktop-menu,
+.desktop-seeall-activities {
   display: none;
 }
 
@@ -127,7 +195,8 @@ body {
   }
 
   .desktop-topbar,
-  .desktop-menu {
+  .desktop-menu,
+  .desktop-seeall-activities {
     display: flex;
   }
 
@@ -177,6 +246,13 @@ body {
     height: 6vh;
   }
 
+  .about-h4 {
+    color: #ec5242;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
   .customized-navitem {
     color: #ec5242;
     border: 0.3rem solid #ec5242;
@@ -217,5 +293,49 @@ body {
   .desktop-menu > div > h4 {
     font-size: 1.1rem;
     font-weight: 400;
+  }
+
+  .activity-header {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    padding: 1.7rem;
+  }
+
+  .jm-activity-div {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10% 0 10%;
+  }
+
+  .jm-activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40vh;
+  }
+
+  .activity-icon {
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+    width: 60%;
+  }
+
+  .activity-name {
+    padding-left: 5%;
+    padding-right: 3%;
+  }
+
+  .activity-description {
+    padding-left: 5%;
+    padding-right: 3%;
+  }
+
+  .desktop-seeall-activities {
+    border-bottom: 2px solid #fff;
+    margin: 1%;
+    padding-bottom: 0;
+    margin-bottom: 4.5%;
   }
 }
