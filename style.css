@@ -1,0 +1,221 @@
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100vw;
+  margin: 0;
+}
+
+.wrapper-1 {
+  position: relative;
+  background-image: url(JM-Images/JM-Background-Cover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100vw;
+}
+
+.wrapper-overlay {
+  background-color: #f3f1f1d2;
+  padding: 1.2rem;
+  background-image: url(JM-Images/JunglemanicLogo.png);
+  background-repeat: repeat;
+  background-blend-mode: lighten;
+}
+
+.fa-bars {
+  color: #272a31;
+  font-size: 2rem;
+  height: 3.5rem;
+}
+
+.mobile-burger {
+  align-self: flex-start;
+}
+
+.mobile-burger-menu-page {
+  padding-top: 30%;
+  text-align: left;
+  margin-left: -1.2rem;
+  margin-top: -4.5rem;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #272a31d0;
+  mix-blend-mode: luminosity;
+  z-index: 2;
+}
+
+.mobile-burger-menu-page > ul > li > a,
+.fa-close {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-shadow: 2px 2px #e92e19;
+  padding: 1%;
+  line-height: 140%;
+}
+
+#burger-menu-page {
+  display: none;
+}
+
+.menu-content {
+  padding-top: 10%;
+}
+
+#fa-close {
+  margin-left: 80%;
+}
+
+.section-one-content {
+  color: #ec5242;
+  text-shadow: 0.5px 0.5px #000;
+  padding: 3% 0 3% 0;
+}
+
+.section-one-content > h1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.section-one-content > h4 {
+  margin: 0;
+  font-size: 1rem;
+  padding: 3% 0 3% 0;
+  font-weight: 400;
+}
+
+.section-two-container {
+  border: 3px solid #fff;
+  background-color: #f3f1f1;
+  padding: 4%;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.section-three-container {
+  color: #272a31;
+  text-shadow: 0.5px 0.5px #000;
+}
+
+.section-three-container > h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  color: #484c52;
+}
+
+.section-three-container > h4 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #484c52;
+}
+
+.desktop-topbar,
+.desktop-menu {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  /* .desktop-menu {
+    display: flex;
+  } */
+
+  .mobile-burger,
+  .see-more {
+    display: none;
+  }
+
+  .desktop-topbar,
+  .desktop-menu {
+    display: flex;
+  }
+
+  .desktop-topbar {
+    position: absolute;
+    width: 100vw;
+    height: 3rem;
+    justify-content: right;
+    background-color: #3d4148;
+    margin: 0;
+    margin-top: -1.2%;
+    margin-left: -1.5%;
+  }
+
+  .desktop-topbar > div {
+    width: 25vw;
+    align-self: center;
+  }
+
+  .desktop-topbar > div > a {
+    padding: 2%;
+    color: #fff;
+  }
+
+  .desktop-menu {
+    display: flex;
+    background-color: #fff;
+    margin-left: -1.5%;
+    margin-top: 2.3%;
+    width: 90.4vw;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5% 0 5%;
+    height: 10vh;
+  }
+
+  .desktop-menu > div {
+    padding: 0.7%;
+  }
+
+  .header-logo {
+    height: 5vh;
+    margin-right: 12%;
+  }
+
+  .header-logo > img {
+    height: 6vh;
+  }
+
+  .customized-navitem {
+    color: #ec5242;
+    border: 0.3rem solid #ec5242;
+    padding: 12%;
+    width: 7.6rem;
+    margin: 7%;
+  }
+
+  .section-one-content {
+    margin: 0 10% 0 1%;
+  }
+
+  .section-one-content > h4 {
+    font-size: 2rem;
+    padding: 1%;
+  }
+
+  .section-one-content > h1 {
+    font-size: 2rem;
+  }
+
+  .section-two-container {
+    width: 50%;
+    margin: 0 10% 0 1%;
+    padding: 1%;
+    font-size: 1rem;
+  }
+
+  .section-three-container {
+    margin: 0 10% 0 1%;
+  }
+
+  .section-three-container > h4 {
+    font-size: 1rem;
+    color: #484c52;
+  }
+
+  .desktop-menu > div > h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+}
