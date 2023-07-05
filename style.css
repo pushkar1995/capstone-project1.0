@@ -4,44 +4,27 @@ body {
   margin: 0;
 }
 
-.wrapper-1 {
-  position: relative;
-  background-image: url(JM-Images/JM-Background-Cover.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  width: 100vw;
-}
-
-.wrapper-overlay {
-  background-color: #f3f1f1d2;
-  padding: 1.2rem;
-  background-image: url(JM-Images/JunglemanicLogo.png);
-  background-repeat: repeat;
-  background-blend-mode: lighten;
-}
-
 .hamburger-icon {
   color: white;
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
+  margin-top: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .fa-bars {
   color: #272a31;
   font-size: 2rem;
-  height: 3.5rem;
+  height: 2rem;
 }
 
 .mobile-menu-list {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 130vh;
+  width: 70vw;
   background-color: #3c3a39;
   padding: 14px;
-  margin-top: -30px;
+  margin-top: -40px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -92,8 +75,22 @@ body {
   list-style-type: none;
 }
 
+.topsection-overlay {
+  background-image: url(JM-Images/JM-Background-Cover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: top;
+  height: 120vw;
+}
+
+.top-section-container {
+  height: 100%;
+  margin: 0 20px 120px 30px;
+}
+
 .section-one-content {
-  color: #ec5242;
+  color: #568f3f;
   text-shadow: 0.5px 0.5px #000;
   padding: 3% 0 3% 0;
 }
@@ -112,8 +109,8 @@ body {
 }
 
 .section-two-container {
-  border: 3px solid #fff;
-  background-color: #f3f1f1;
+  border: 3px solid #568f3f;
+  background-color: transparent;
   padding: 4%;
   font-weight: 400;
   font-size: 0.9rem;
@@ -171,7 +168,7 @@ body {
   left: 45%;
   width: 10%;
   height: 2px;
-  background-color: #ec5242;
+  background-color: #568f3f;
   margin: 0 auto;
 }
 
@@ -196,7 +193,7 @@ body {
 }
 
 .activity-name {
-  color: #ec5242;
+  color: #568f3f;
   text-shadow: 1px 1px #000;
   text-align: left;
   padding-right: 2%;
@@ -249,7 +246,7 @@ body {
   left: 45%;
   width: 10%;
   height: 2px;
-  background-color: #ec5242;
+  background-color: #568f3f;
   margin: 0 auto;
 }
 
@@ -373,7 +370,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ff6b00;
+  background-color: #568f3f;
   color: #fff;
   width: 8rem;
   height: 3rem;
@@ -446,8 +443,7 @@ body {
     justify-content: right;
     background-color: #3d4148;
     margin: 0;
-    margin-top: -1.2%;
-    margin-left: -1.5%;
+    margin-top: -2.5%;
   }
 
   .desktop-topbar > div {
@@ -463,17 +459,20 @@ body {
   .desktop-menu {
     display: flex;
     background-color: #fff;
-    margin-left: -1.5%;
     margin-top: 2.3%;
     width: 90.4vw;
     justify-content: space-around;
     align-items: center;
-    padding: 0 5% 0 5%;
-    height: 10vh;
+    padding: 1% 5% 0 5%;
+    height: 15vh;
   }
 
   .desktop-menu > div {
     padding: 0.7%;
+  }
+
+  .desktop-menu > div > h4 > a {
+    text-decoration: none;
   }
 
   .header-logo {
@@ -486,18 +485,22 @@ body {
   }
 
   .about-h4 {
-    color: #ec5242;
+    color: #568f3f;
     font-size: 1.2rem;
     font-weight: 400;
     text-decoration: none;
   }
 
   .customized-navitem {
-    color: #ec5242;
-    border: 0.3rem solid #ec5242;
+    color: #568f3f;
+    border: 0.3rem solid #568f3f;
     padding: 12%;
     width: 7.6rem;
     margin: 7%;
+  }
+
+  .topsection-overlay {
+    height: 40vw;
   }
 
   .section-one-content {
