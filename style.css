@@ -21,50 +21,75 @@ body {
   background-blend-mode: lighten;
 }
 
+.hamburger-icon {
+  color: white;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
 .fa-bars {
   color: #272a31;
   font-size: 2rem;
   height: 3.5rem;
 }
 
-.mobile-burger {
-  align-self: flex-start;
-}
-
-.mobile-burger-menu-page {
-  padding-top: 30%;
-  text-align: left;
-  margin-left: -1.2rem;
-  margin-top: -4.5rem;
+.mobile-menu-list {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
-  position: fixed;
-  background-color: #272a31d0;
-  mix-blend-mode: luminosity;
+  background-color: #3c3a39;
+  padding: 14px;
+  margin-top: -30px;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s;
+  transform: translateX(-200%);
 }
 
-.mobile-burger-menu-page > ul > li > a,
+.mobile-menu-list > ul > li > a,
 .fa-close {
   color: #fff;
   text-decoration: none;
   font-size: 1.7rem;
   font-weight: 900;
   text-shadow: 2px 2px #e92e19;
-  padding: 1%;
   line-height: 140%;
 }
 
-#burger-menu-page {
-  display: none;
+.x-closeicon-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
 }
 
-.menu-content {
-  padding-top: 10%;
+.x-close-icon {
+  width: 20px;
+  height: 20px;
+  z-index: 3;
+  margin-top: 50px;
+  margin-right: 15px;
 }
 
-#fa-close {
-  margin-left: 80%;
+.mobile-menu-list ul li a {
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #fff5e1;
+  padding-bottom: 15px;
+}
+
+.mobile-menu-list ul li {
+  border-bottom: 1px solid #6f6c6b;
+  width: 98%;
+}
+
+.mobile-menu-list ul {
+  list-style-type: none;
 }
 
 .section-one-content {
@@ -234,8 +259,8 @@ body {
   align-items: center;
   height: 3rem;
   border: 1px solid #a5a7ac;
-  width: 90%;
-  margin-bottom: 7%;
+  width: 70%;
+  margin: 0 0 7% 12%;
 }
 
 .see-more-blogs > h3 {
@@ -247,6 +272,129 @@ body {
 
 .see-more-blogs > i {
   color: #e92e19;
+}
+
+/* Contact Form Styles */
+
+.contactform-maincontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactform-headercontainer {
+  margin: 30px 25px 35px 23px;
+}
+
+.contactform-headertext {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  color: #172b4d;
+  line-height: 2.7rem;
+}
+
+.contactform-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.fullname-field {
+  width: 327px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-decoration-color: #979493;
+  padding-left: 3%;
+  border: none;
+}
+
+.namefield-bottomline {
+  margin-top: -20px;
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
+  width: 324px;
+  border: 0.01rem solid #dbd8d7;
+}
+
+.email-field {
+  width: 327px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 24px;
+  padding-left: 3%;
+  border: none;
+}
+
+.emailfield-bottomline {
+  margin-top: -20px;
+  margin-right: 0.1rem;
+  margin-left: 0.1rem;
+  width: 324px;
+  border: 0.01rem solid #dbd8d7;
+}
+
+.error-text {
+  color: red;
+}
+
+.writeme-something-field {
+  width: 327px;
+  height: 38px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-top: 6%;
+  padding-left: 3%;
+  padding-bottom: 40%;
+  background: #fbf8f7;
+  color: #3c3a39;
+  border: none;
+}
+
+.getintouch-button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6b00;
+  color: #fff;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  margin-top: 15px;
+}
+
+.getintouch-button:hover {
+  border: 0.01rem solid #f55800;
+  color: #f55800;
+  background-color: #fff5e1;
+}
+
+.getintouch-button:active {
+  background-color: #e05304;
+}
+
+.footer-dividerline {
+  margin-top: 1rem;
+  width: 100%;
+  border: 0.01rem solid #dfe1e6;
 }
 
 .footer {
@@ -279,11 +427,7 @@ body {
 /* Desktop Styles */
 
 @media only screen and (min-width: 768px) {
-  /* .desktop-menu {
-    display: flex;
-  } */
-
-  .mobile-burger,
+  .hamburger-icon,
   .see-more-blogs {
     display: none;
   }
@@ -441,6 +585,94 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin: 3%;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+
+    /* background-color:#fff; */
+    padding: 10px;
+  }
+
+  /* Form Section */
+
+  .contactform-maincontainer {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    margin-left: 192px;
+    margin-top: 15px;
+    height: 400px;
+  }
+
+  .contactform-headertext {
+    text-align: start;
+    width: 373px;
+    margin-left: -120px;
+    align-items: center;
+  }
+
+  .contactform-container {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    margin-left: -70px;
+  }
+
+  .fullname-field {
+    margin-right: 340px;
+    padding: 5px;
+    padding-left: 20px;
+  }
+
+  .namefield-bottomline {
+    margin: -20px -20px 0 -20px;
+    width: 670px;
+    border: 1px solid #dbd8d7;
+  }
+
+  .email-field {
+    margin-right: 340px;
+    padding: 5px;
+    padding-left: 20px;
+  }
+
+  .emailfield-bottomline {
+    margin: -20px -20px 0 -20px;
+    width: 670px;
+    border: 1px solid #dbd8d7;
+  }
+
+  .error-text {
+    color: red;
+  }
+
+  .writeme-something-field {
+    display: flex;
+    background-color: #fbf8f7;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #3c3a39;
+    padding: 5px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    height: 90px;
+    margin: 50px;
+    margin-top: -1px;
+    width: 675px;
+  }
+
+  .getintouch-button {
+    margin-left: -545px;
+    margin-top: -55px;
   }
 
   .footer {
