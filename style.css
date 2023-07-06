@@ -773,6 +773,10 @@ body {
     padding: 10px;
   }
 
+  .jmactivity-card {
+    width: 380px;
+  }
+
   .jmactivity-cardimg {
     height: 220px;
     width: 380px;
