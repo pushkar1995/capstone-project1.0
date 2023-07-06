@@ -5,13 +5,12 @@ body {
 }
 
 .hamburger-icon {
-  color: white;
   margin-top: 1.5rem;
   padding-left: 1.5rem;
 }
 
 .fa-bars {
-  color: #272a31;
+  color: #568f3f;
   font-size: 2rem;
   height: 2rem;
 }
@@ -22,7 +21,7 @@ body {
   left: 0;
   height: 130vh;
   width: 70vw;
-  background-color: #3c3a39;
+  background-color: #568f3f;
   padding: 14px;
   margin-top: -40px;
   z-index: 2;
@@ -36,10 +35,10 @@ body {
 .fa-close {
   color: #fff;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
-  text-shadow: 2px 2px #e92e19;
-  line-height: 140%;
+  text-shadow: 2px 2px #568f3f;
+  line-height: 80%;
 }
 
 .x-closeicon-wrapper {
@@ -54,6 +53,7 @@ body {
   z-index: 3;
   margin-top: 50px;
   margin-right: 15px;
+  background-color: #fff;
 }
 
 .mobile-menu-list ul li a {
@@ -67,7 +67,7 @@ body {
 }
 
 .mobile-menu-list ul li {
-  border-bottom: 1px solid #6f6c6b;
+  border-bottom: 1px solid #fff;
   width: 98%;
 }
 
@@ -163,13 +163,14 @@ body {
 
 .activity-header::after {
   content: "";
-  position: absolute;
+  display: flex;
   bottom: 0;
   left: 45%;
-  width: 10%;
-  height: 2px;
+  width: 85%;
+  height: 1px;
   background-color: #568f3f;
   margin: 0 auto;
+  margin-top: 5%;
 }
 
 .jm-activity-div {
@@ -227,6 +228,7 @@ body {
 
 .blog-header-div {
   width: 50%;
+  margin-bottom: -10%;
 }
 
 .blog-header {
@@ -241,13 +243,42 @@ body {
 
 .blog-header::after {
   content: "";
-  position: absolute;
+  display: flex;
   bottom: 0;
   left: 45%;
-  width: 10%;
+  width: 55%;
   height: 2px;
   background-color: #568f3f;
-  margin: 0 auto;
+  margin: 5% auto;
+}
+
+.blog-card {
+  border: 1px solid #568f3f;
+  margin-bottom: 0.5rem;
+}
+
+.blogTitle {
+  text-decoration-color: #568f3f;
+  color: #568f3f;
+  padding: 1rem 0 0 1rem;
+}
+
+.blogSubDescription {
+  padding: 1rem 0 0 1rem;
+}
+
+.cardImage {
+  height: 220px;
+  width: 350px;
+}
+
+.blogTags {
+  padding: 1rem 0 0 1rem;
+}
+
+.blogDescription {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .see-more-blogs {
@@ -257,7 +288,7 @@ body {
   height: 3rem;
   border: 1px solid #a5a7ac;
   width: 70%;
-  margin: 0 0 7% 12%;
+  margin: 0 0 7% 15%;
 }
 
 .see-more-blogs > h3 {
@@ -464,7 +495,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 1% 5% 0 5%;
-    height: 15vh;
+    height: 12vh;
   }
 
   .desktop-menu > div {
@@ -473,6 +504,7 @@ body {
 
   .desktop-menu > div > h4 > a {
     text-decoration: none;
+    color: #568f3f;
   }
 
   .header-logo {
@@ -594,9 +626,12 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
-
-    /* background-color:#fff; */
     padding: 10px;
+  }
+
+  .cardImage {
+    height: 220px;
+    width: 380px;
   }
 
   /* Form Section */
