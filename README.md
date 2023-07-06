@@ -52,9 +52,10 @@ This capstone project is a culmination of my first modules' learning journey. So
 ## 🚀 Live Demo & Video presentation <a name="live-demo"></a> <a name='video'></a>
 <br>
 
-- [Click me to view deployed project!]()
+- [Click me to view deployed project!]
+(https://pushkar1995.github.io/capstone-project1.0/)
 
-- [Click me to view web page and code presentation]()
+- [Click me to view web page and code presentation](https://www.loom.com/share/858a22022b2c40a2b9a5ad88196777ef)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
