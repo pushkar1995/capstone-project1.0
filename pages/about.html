@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Poppins:wght@100&display=swap"
@@ -27,8 +27,9 @@
                 </header>
                 <nav class="">
                     <div class="desktop-menu">
-                        <div class="header-logo"><img src="JM-Images/JunglemanicLogo.png"></div>
-                        <div><a class="about-h4" href="/pages/about.html">About</a></div>
+                        <div class="header-logo"><a href='/index.html' class="header-logo"><img
+                                    src="/JM-Images/JunglemanicLogo.png"></a></div>
+                        <div><a class="about-h4" href="#top-section">About</a></div>
                         <div>
                             <h4><a href="#activities">Main Activities</a></h4>
                         </div>
@@ -48,13 +49,13 @@
                 </nav>
                 <div class="mobile-menu-list">
                     <div class="x-closeicon-wrapper">
-                        <img class="x-close-icon" src="JM-Images/Icons/Cancel-Icon.png" alt="Close-Icon-Image">
+                        <img class="x-close-icon" src="/JM-Images/Icons/Cancel-Icon.png" alt="Close-Icon-Image">
                     </div>
                     <ul>
-                        <li> <a href="#activities">Main Activities</a></li>
-                        <li> <a href="/pages/about.html">About</a></li>
-                        <li> <a href="#single-activity-section">JM Activity</a></li>
-                        <li> <a href="#contact-form">Contact Us</a></li>
+                        <li> <a href="/index.html#activities">JM Activities</a></li>
+                        <li> <a href="#top-section">About</a></li>
+                        <li> <a href="/index.html#single-activity-section">Blogs</a></li>
+                        <li> <a href="/index.html#contact-form">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,6 +66,7 @@
                         <div class="section-one-content">
                             <h4>thejunglemaniac</h4>
                             <h1>Explore with us ...</h1>
+                            <!-- <button>Explore >></button> -->
                         </div>
 
                         <div class="section-two-container">
@@ -78,9 +80,9 @@
                         </div>
 
                         <div class="section-three-container">
-                            <h3>2025.02.23 (Sat) 5:00AM</h3>
+                            <h3>2025.02.23 (Sat) ~ 08 (Mon)</h3>
                             <h4>
-                                Join Jungle Manaics raniban hike and morning meditation session!
+                                Join Jungle Manaics every saturday morning hike and meditation session!
                             </h4>
                         </div>
                     </div>
@@ -95,7 +97,7 @@
         </div>
         <div class="jm-activity-div">
             <article class="jm-activity">
-                <div class="activity-icon"><img src="JM-Images/ActivitiesIcons/HikingIcon.png"></div>
+                <div class="activity-icon"><img src="/JM-Images/ActivitiesIcons/HikingIcon.png"></div>
                 <div class="activity-name">
                     <h4>Hiking</h4>
                 </div>
@@ -105,7 +107,7 @@
                 </div>
             </article>
             <article class="jm-activity">
-                <div class="activity-icon"><img src="JM-Images/ActivitiesIcons/CampingIcon.png"></div>
+                <div class="activity-icon"><img src="/JM-Images/ActivitiesIcons/CampingIcon.png"></div>
                 <div class="activity-name">
                     <h4>Camping</h4>
                 </div>
@@ -115,7 +117,7 @@
                 </div>
             </article>
             <article class="jm-activity">
-                <div class="activity-icon"><img src="JM-Images/ActivitiesIcons/BicycleIcon.png"></div>
+                <div class="activity-icon"><img src="/JM-Images/ActivitiesIcons/BicycleIcon.png"></div>
                 <div class="activity-name">
                     <h4>Cycling/Motorcycle Ride</h4>
                 </div>
@@ -125,7 +127,7 @@
                 </div>
             </article>
             <article class="jm-activity">
-                <div class="activity-icon"><img src="JM-Images/ActivitiesIcons/MeditationIcon.png"></div>
+                <div class="activity-icon"><img src="/JM-Images/ActivitiesIcons/MeditationIcon.png"></div>
                 <div class="activity-name">
                     <h4>Short Hike and Meditation</h4>
                 </div>
@@ -136,7 +138,7 @@
                 </div>
             </article>
             <article class="jm-activity">
-                <div class="activity-icon"><img src="JM-Images/ActivitiesIcons/ArtTherapyIcon.png"></div>
+                <div class="activity-icon"><img src="/JM-Images/ActivitiesIcons/ArtTherapyIcon.png"></div>
                 <div class="activity-name">
                     <h4>Nature Art Therapy</h4>
                 </div>
@@ -150,51 +152,8 @@
         <div class="desktop-seeall-activities">
             <h4>SEE ALL ACTIVITIES</h4>
         </div>
-        <div class="joinjm-button-cont">
-            <button class="join-jm-button">Join JungleManiac Community</button>
-        </div>
     </section>
 
-    <section id='single-activity-section' class="single-activity-div">
-        <div class="single-activity">
-            <div class="activity-header-div">
-                <h3 class="activity-header">Activities with Jungle Maniacs</h3>
-            </div>
-            <div id="dynamicActivity" class="dynamicActivity">
-                <div class="jmactivity-cards-container">
-
-                </div>
-            </div>
-        </div>
-
-        <div id="see-more-activity" class="see-more-activity">
-            <h3>See more</h3>
-            <a class="see-more-btn" type="button"><i class="fas fa-chevron-down"></i></a>
-        </div>
-        </div>
-    </section>
-
-    <div class="footer-dividerline"></div>
-    <section id='maniacs-info-section' class="maniacs-info-div">
-        <div class="maniacs-infos">
-            <div class="info-header-div">
-                <h3 class="info-header">Jungle Maniac Team</h3>
-            </div>
-            <div id="dynamicInfos" class="dynamicInfos">
-                <div class="info-cards-container">
-
-                </div>
-            </div>
-        </div>
-
-        <div id="see-more-infos" class="see-more-infos">
-            <h3>See more</h3>
-            <a class="see-more-btn" type="button"><i class="fas fa-chevron-down"></i></a>
-        </div>
-        </div>
-    </section>
-
-    <div class="footer-dividerline"></div>
     <!-- Contact Form -->
     <section id="contact-form">
         <div class="contactform-maincontainer">
@@ -225,7 +184,7 @@
     <div class="footer-dividerline"></div>
     <footer class="footer-container">
         <div class="footer">
-            <img src="JM-Images/JunglemanicLogo.png">
+            <img src="/JM-Images/JunglemanicLogo.png">
             <p>2023 @thejunglemanics
                 All rights reserved <br><br>
                 Unless otherwise specified, all content of the @thejunglemanics website is protected
@@ -239,10 +198,8 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/bd350dc967.js" crossorigin="anonymous"></script>
-    <script src="JavaScript/MobileMenu.js"></script>
-    <script src="JavaScript/JMActivity.js"></script>
-    <script src="JavaScript/ManiacsInfo.js"></script>
-    <script src="JavaScript/ContactFormValidation.js"></script>
+    <script src="/JavaScript/MobileMenu.js"></script>
+    <script src="/JavaScript/ContactFormValidation.js"></script>
 </body>
 
 </html>

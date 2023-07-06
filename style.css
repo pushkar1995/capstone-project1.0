@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+.ignore {
+  display: none;
+}
+
 .hamburger-icon {
   margin-top: 1.5rem;
   padding-left: 1.5rem;
@@ -114,26 +118,27 @@ body {
   padding: 4%;
   font-weight: 400;
   font-size: 0.9rem;
+  color: #fff;
 }
 
 .section-three-container {
-  color: #272a31;
   text-shadow: 0.5px 0.5px #000;
+  color: #fff;
 }
 
 .section-three-container > h3 {
   font-size: 1.4rem;
   margin-bottom: 0;
-  color: #484c52;
+  color: #fff;
 }
 
 .section-three-container > h4 {
   font-size: 0.8rem;
   font-weight: 400;
-  color: #484c52;
+  color: #fff;
 }
 
-.main-activities-section {
+.main-activity-types-section {
   background-color: #272a31;
   opacity: 1;
   background-image: linear-gradient(30deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e), linear-gradient(150deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e), linear-gradient(30deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e), linear-gradient(150deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e), linear-gradient(60deg, #0e0e0e77 25%, transparent 25.5%, transparent 75%, #0e0e0e77 75%, #0e0e0e77), linear-gradient(60deg, #0e0e0e77 25%, transparent 25.5%, transparent 75%, #0e0e0e77 75%, #0e0e0e77);
@@ -212,13 +217,30 @@ body {
   height: 70%;
 }
 
-#dynamicBlogs {
+.joinjm-button-cont {
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  padding: 3%;
+}
+
+.join-jm-button {
+  background-color: #568f3f;
+  border: none;
+  font-weight: 100;
+  font-size: 0.9rem;
+  color: #f3f1f1;
+  padding: 3%;
+  margin: 3%;
+}
+
+#dynamicActivity {
   margin: 7%;
   display: flex;
   flex-direction: column;
 }
 
-.blogs {
+.single-activity {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -226,62 +248,46 @@ body {
   margin: 1%;
 }
 
-.blog-header-div {
-  width: 50%;
-  margin-bottom: -10%;
-}
-
-.blog-header {
-  font-weight: 400;
+.activity-header-div {
+  font-weight: 900;
   padding: 7%;
   text-align: center;
   position: relative;
-  font-size: 1.2rem;
-  margin: 7%;
-  margin-top: 0;
+  font-size: 3.2rem;
+  margin-top: -30px;
+  margin-bottom: -30px;
 }
 
-.blog-header::after {
-  content: "";
-  display: flex;
-  bottom: 0;
-  left: 45%;
-  width: 55%;
-  height: 2px;
-  background-color: #568f3f;
-  margin: 5% auto;
-}
-
-.blog-card {
+.jmactivity-card {
   border: 1px solid #568f3f;
   margin-bottom: 0.5rem;
 }
 
-.blogTitle {
+.activityTitle {
   text-decoration-color: #568f3f;
   color: #568f3f;
   padding: 1rem 0 0 1rem;
 }
 
-.blogSubDescription {
+.activitySubDescription {
   padding: 1rem 0 0 1rem;
 }
 
-.cardImage {
+.jmactivity-cardimg {
   height: 220px;
   width: 350px;
 }
 
-.blogTags {
+.activityTags {
   padding: 1rem 0 0 1rem;
 }
 
-.blogDescription {
+.activityDescriptionText {
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-.see-more-blogs {
+.see-more-activity {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,14 +297,139 @@ body {
   margin: 0 0 7% 15%;
 }
 
-.see-more-blogs > h3 {
+.see-more-activity > h3 {
   padding: 3%;
   font-size: 0.8rem;
   font-weight: 400;
   margin: 1%;
 }
 
-.see-more-blogs > i {
+.see-more-activity > i {
+  color: #e92e19;
+}
+
+/* Maniacs Info Section */
+
+.info-header-div {
+  font-weight: 900;
+  padding: 7%;
+  text-align: center;
+  position: relative;
+  font-size: 3.2rem;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+.info-header {
+  font-weight: 400;
+  padding: 7%;
+  text-align: center;
+  position: relative;
+  font-size: 1.2rem;
+  margin: 7%;
+  margin-top: 12%;
+}
+
+.info-header::after {
+  content: "";
+  display: flex;
+  bottom: 0;
+  left: 45%;
+  width: 25%;
+  height: 1px;
+  background-color: #568f3f;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.jungleManiacsGuy {
+  height: 5rem;
+  border: 1px solid blue;
+}
+
+#dynamicInfos {
+  margin: 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dynamic-Infos {
+  width: 85vw;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffffff1;
+  margin: 2%;
+}
+
+.dynamic-Infos > img {
+  height: 25vh;
+  padding: 5%;
+  background-color: #fff;
+  background-image:
+    linear-gradient(
+      45deg,
+      #000 25%,
+      transparent 25%,
+      transparent 75%,
+      #000 75%,
+      #000
+    ),
+    linear-gradient(
+      -45deg,
+      #000 25%,
+      transparent 25%,
+      transparent 75%,
+      #000 75%,
+      #000
+    );
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+
+.dynamic-about-h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1%;
+  padding: 1%;
+}
+
+.dynamic-about-h4 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #ec5242;
+  font-style: italic;
+  margin: 1%;
+  padding: 0;
+  padding-bottom: 5%;
+}
+
+.dynamic-about-p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin: 1%;
+  padding: 0;
+}
+
+.see-more-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  border: 1px solid #a5a7ac;
+  width: 70%;
+  margin: 0 0 7% 15%;
+}
+
+.see-more-infos > h3 {
+  padding: 3%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 1%;
+}
+
+.see-more-infos > i {
   color: #e92e19;
 }
 
@@ -446,6 +577,8 @@ body {
   padding-right: 5%;
 }
 
+.see-more-infos,
+.see-more-activity,
 .desktop-topbar,
 .desktop-menu,
 .desktop-seeall-activities {
@@ -455,8 +588,10 @@ body {
 /* Desktop Styles */
 
 @media only screen and (min-width: 768px) {
+  .joinjm-button-cont,
   .hamburger-icon,
-  .see-more-blogs {
+  .see-more-activity,
+  .see-more-infos {
     display: none;
   }
 
@@ -561,7 +696,6 @@ body {
 
   .section-three-container > h4 {
     font-size: 1rem;
-    color: #484c52;
   }
 
   .desktop-menu > div > h4 {
@@ -586,7 +720,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 40vh;
+    height: 45vh;
   }
 
   .activity-icon {
@@ -613,7 +747,17 @@ body {
     margin-bottom: 4.5%;
   }
 
-  #dynamicBlogs {
+  .activity-header-div {
+    font-weight: 400;
+    padding: 7%;
+    text-align: center;
+    position: relative;
+    font-size: 1.2rem;
+    margin-top: -100px;
+    margin-bottom: -80px;
+  }
+
+  #dynamicActivity {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -622,16 +766,54 @@ body {
     margin: 3%;
   }
 
-  .cards-container {
+  .jmactivity-cards-container {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
     padding: 10px;
   }
 
-  .cardImage {
+  .jmactivity-cardimg {
     height: 220px;
     width: 380px;
+  }
+
+  /* Maniacs Info Section */
+
+  .info-header-div {
+    margin: -50px 0 -80px 0;
+  }
+
+  .info-header {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    padding: 1.7rem;
+  }
+
+  .maniacs-infos > .info-header-div > .info-header {
+    margin: 0;
+  }
+
+  #dynamicInfos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3%;
+  }
+
+  .dynamic-Infos {
+    width: 35vw;
+  }
+
+  #ignore {
+    display: none;
+  }
+
+  .dynamic-maniacs-pic {
+    padding: 10%;
+    background-color: #fff;
   }
 
   /* Form Section */
