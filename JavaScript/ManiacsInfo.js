@@ -1,8 +1,8 @@
 const jungleManiacsGuys = [
   {
-    image: 'JM-Images/ManiacsPhoto/ManiacPhoto1.jpeg',
-    name: 'Saila Man',
-    whereFrom: 'Pokhareli Kancha',
+    image: 'JM-Images/ManiacsPhoto/ManiacPhoto-1.jpeg',
+    name: 'Saili',
+    whereFrom: 'Pokhareli Kanchi',
     description: 'Genuinely passionate about the natural world and finds joy in immersing themselves in its beauty and wonders.',
   },
   {
@@ -18,7 +18,7 @@ const jungleManiacsGuys = [
     description: 'Observe and study different aspects of nature, from species identification to ecological interactions, and often share their insights with others.',
   },
   {
-    image: 'JM-Images/ManiacsPhoto/ManiacPhoto4.jpeg',
+    image: 'JM-Images/ManiacsPhoto/ManiacPhoto-4.jpeg',
     name: 'Pudke Don',
     whereFrom: 'Pokhareli Kancha',
     description: 'Prioritizes organic and locally sourced products, support renewable energy initiatives, or advocate for environmentally responsible policies.',
