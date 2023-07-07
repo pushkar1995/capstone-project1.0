@@ -921,6 +921,12 @@ body {
     padding-left: 7rem;
   }
 
+  .footer > img {
+    height: 20vh;
+    width: 40vh;
+    padding-right: 15%;
+  }
+
   /* About Page Styles */
 
   .topsec-about {
